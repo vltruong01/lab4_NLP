@@ -34,7 +34,7 @@ The Wikipedia dataset is sourced from Hugging Face's datasets library. Hugging F
 
 ## Discussion
 
-Due to the large size of the dataset and the limited time available for training, the results may not be as good as expected. Training large models like BERT on extensive datasets requires significant computational resources and time. When training time is constrained, the model may not fully converge, leading to suboptimal performance. Additionally, the limited number of training epochs can restrict the model's ability to generalize well to unseen data. Some ways to mitigate these issues
+Due to the large size of the dataset and the limited time available for training, the results may not be as good as expected. Training large models like BERT on extensive datasets requires significant computational resources and time. When training time is constrained, the model may not fully converge, leading to suboptimal performance. Additionally, the limited number of training epochs can restrict the model's ability to generalize well to unseen data. Some ways to mitigate these issues:
 
 - **Incremental Training**: Train the model incrementally over multiple sessions, saving checkpoints and resuming training later.
 - **Data Subsampling**: Use a smaller, representative subset of the dataset for initial experiments to reduce training time.
