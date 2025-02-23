@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLI Predictor</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 50px; 
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button { 
+            padding: 10px; 
+            margin: 10px 0; 
+            width: 100%; 
+            box-sizing: border-box;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Natural Language Inference (NLI) Predictor</h2>
+        <form method="POST">
+            <input type="text" name="premise" placeholder="Enter premise" required value="{{ premise }}"><br>
+            <input type="text" name="hypothesis" placeholder="Enter hypothesis" required value="{{ hypothesis }}"><br>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <h3>Prediction: <b>{{ prediction }}</b></h3>
+            <p class="message">Have a nice day 😊</p>
+        {% endif %}
+    </div>
+</body>
+</html>

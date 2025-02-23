@@ -1,0 +1,10 @@
+Validation Accuracy: 0.3287
+               precision    recall  f1-score   support
+
+   Entailment       0.00      0.00      0.00      3329
+      Neutral       0.33      1.00      0.49      3235
+Contradiction       0.00      0.00      0.00      3278
+
+     accuracy                           0.33      9842
+    macro avg       0.11      0.33      0.16      9842
+ weighted avg       0.11      0.33      0.16      9842
