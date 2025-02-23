@@ -2,7 +2,8 @@
 
 ![Task Image](image-2.png)
 
-## Task 1: Dataset Description
+## Task 1: 
+### Dataset Description
 
 The dataset used for training BERT in this notebook is a subset of the Wikipedia dataset. The Wikipedia dataset is a large-scale dataset containing text from Wikipedia articles. It is commonly used for natural language processing (NLP) tasks, including language modeling and pre-training of transformer models like BERT.
 
